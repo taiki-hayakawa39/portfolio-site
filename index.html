@@ -1,59 +1,220 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hayakawa Taiki | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <nav>
-      <span class="logo">My Portfolio</span>
-      <ul>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home">HT</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#strengths">Strengths</a></li>
         <li><a href="#works">Works</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+      <button class="nav-toggle" aria-label="メニュー">&#9776;</button>
+    </div>
+  </nav>
 
-  <section id="hero">
-    <h1>こんにちは、<span>早川泰生</span>です。</h1>
-    <p>Web Developer / Designer</p>
+  <!-- Home -->
+  <section id="home" class="section hero">
+    <div class="hero-content fade-in">
+      <p class="hero-sub">Hello, I'm</p>
+      <h1 class="hero-name">Hayakawa Taiki</h1>
+      <p class="hero-catch">「学びながら、自分らしく形にする。」</p>
+      <p class="hero-desc">名古屋市立大学で経営学を学びながら、AIやWeb制作、データ分析、表現活動に興味を持って取り組んでいます。</p>
+      <a href="#about" class="btn">About Me →</a>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Webの開発・デザインに取り組んでいます。使いやすく美しいプロダクトを作ることが好きです。</p>
-  </section>
-
-  <section id="works">
-    <h2>Works</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Project A</h3>
-        <p>Webアプリケーションの開発</p>
-      </div>
-      <div class="card">
-        <h3>Project B</h3>
-        <p>ECサイトのデザイン・実装</p>
-      </div>
-      <div class="card">
-        <h3>Project C</h3>
-        <p>モバイルアプリのUI設計</p>
+  <!-- About Me -->
+  <section id="about" class="section">
+    <div class="container fade-in">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-placeholder">HT</div>
+        </div>
+        <ul class="about-list">
+          <li>📍 名古屋市立大学 在学中</li>
+          <li>📚 会計・データ分析を学習中</li>
+          <li>🤖 AIやWeb制作に興味がある</li>
+          <li>📊 ゼミや授業でデータ分析・発表に取り組んでいる</li>
+          <li>✨ 新しいことを学んで形にすることが好き</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>お気軽にご連絡ください。</p>
-    <a href="mailto:your@email.com" class="btn">メールを送る</a>
+  <!-- Interests -->
+  <section id="interests" class="section section-alt">
+    <div class="container fade-in">
+      <h2 class="section-title">Interests</h2>
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-icon">📒</span>
+          <h3>会計</h3>
+        </div>
+        <div class="card">
+          <span class="card-icon">🤖</span>
+          <h3>AI活用</h3>
+        </div>
+        <div class="card">
+          <span class="card-icon">💻</span>
+          <h3>Web制作</h3>
+        </div>
+        <div class="card">
+          <span class="card-icon">📊</span>
+          <h3>データ分析</h3>
+        </div>
+        <div class="card">
+          <span class="card-icon">🎤</span>
+          <h3>プレゼンテーション</h3>
+        </div>
+        <div class="card">
+          <span class="card-icon">🎨</span>
+          <h3>表現活動</h3>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2026 早川泰生</p>
+  <!-- Strengths -->
+  <section id="strengths" class="section">
+    <div class="container fade-in">
+      <h2 class="section-title">Strengths</h2>
+      <div class="card-grid card-grid--2">
+        <div class="card card--strength">
+          <span class="card-icon">🔄</span>
+          <h3>継続して学ぶ力</h3>
+          <p>興味を持ったことを継続的に深め、着実にスキルを積み上げます。</p>
+        </div>
+        <div class="card card--strength">
+          <span class="card-icon">💬</span>
+          <h3>分かりやすく伝える力</h3>
+          <p>複雑な内容をシンプルに整理し、相手に伝わる言葉で表現します。</p>
+        </div>
+        <a href="#" target="_blank" class="card card--strength card--link">
+          <span class="card-icon">🚀</span>
+          <h3>新しいことに挑戦する力</h3>
+          <p>未知の分野にも積極的に飛び込み、行動しながら学びます。</p>
+          <span class="card-more">実際にやってみたこと →</span>
+        </a>
+        <div class="card card--strength">
+          <span class="card-icon">🤝</span>
+          <h3>相手の立場で考える力</h3>
+          <p>相手の視点を大切にし、信頼関係を築くことを意識しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="section section-alt">
+    <div class="container fade-in">
+      <h2 class="section-title">Works</h2>
+      <p class="section-sub">制作したアプリ・サイト・AIエージェント</p>
+      <div class="works-grid">
+
+        <!-- 作品カード例1 -->
+        <a href="#" class="work-card" target="_blank">
+          <div class="work-tag">Web App</div>
+          <h3 class="work-title">作品名 1</h3>
+          <p class="work-desc">ここに作品の簡単な説明を入れてください。</p>
+          <span class="work-link">View →</span>
+        </a>
+
+        <!-- 作品カード例2 -->
+        <a href="#" class="work-card" target="_blank">
+          <div class="work-tag">AI Agent</div>
+          <h3 class="work-title">作品名 2</h3>
+          <p class="work-desc">ここに作品の簡単な説明を入れてください。</p>
+          <span class="work-link">View →</span>
+        </a>
+
+        <!-- 作品カード例3 -->
+        <a href="#" class="work-card" target="_blank">
+          <div class="work-tag">Website</div>
+          <h3 class="work-title">作品名 3</h3>
+          <p class="work-desc">ここに作品の簡単な説明を入れてください。</p>
+          <span class="work-link">View →</span>
+        </a>
+
+        <!-- 追加する場合はこのブロックをコピーしてください -->
+        <!--
+        <a href="https://..." class="work-card" target="_blank">
+          <div class="work-tag">カテゴリ</div>
+          <h3 class="work-title">作品名</h3>
+          <p class="work-desc">説明文</p>
+          <span class="work-link">View →</span>
+        </a>
+        -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container fade-in">
+      <h2 class="section-title">Favorite</h2>
+      <p class="section-sub">好きなこと・趣味</p>
+      <div class="gallery-grid">
+        <a href="#" target="_blank" class="gallery-card">
+          <div class="gallery-img gallery-img--cafe"></div>
+          <p>☕ カフェ</p>
+        </a>
+        <a href="#" target="_blank" class="gallery-card">
+          <div class="gallery-img gallery-img--movie"></div>
+          <p>🎬 映画</p>
+        </a>
+        <a href="#" target="_blank" class="gallery-card">
+          <div class="gallery-img gallery-img--music"></div>
+          <p>🎵 音楽</p>
+        </a>
+        <a href="#" target="_blank" class="gallery-card">
+          <div class="gallery-img gallery-img--walk"></div>
+          <p>🚶 散歩</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container fade-in">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">お気軽にどうぞ</p>
+      <div class="contact-links">
+        <a href="https://github.com/" target="_blank" class="contact-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="mailto:your@email.com" class="contact-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          Email
+        </a>
+        <!-- <a href="https://instagram.com/" target="_blank" class="contact-btn">Instagram</a> -->
+        <!-- <a href="https://x.com/" target="_blank" class="contact-btn">X (Twitter)</a> -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Hayakawa Taiki</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

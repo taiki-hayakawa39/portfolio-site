@@ -170,7 +170,7 @@ body {
 }
 /* 差し替え用プレースホルダー色 */
 .gallery-img--cafe   { background-color: #d4e8d4; background-image: url('images/cafe.jpg'); }
-.gallery-img--movie  { background-color: #d4d4e8; background-image: url('images/movie.jpg'); }
+.gallery-img--sports { background-color: #d4d4e8; background-image: url('images/sports.jpg'); }
 .gallery-img--music  { background-color: #e8d4e8; background-image: url('images/music.png'); }
 .gallery-img--walk   { background-color: #e8e8d4; background-image: url('images/walk.jpg'); }
 .gallery-card p { padding: 12px; font-size: .9rem; font-weight: 500; color: var(--text); }

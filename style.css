@@ -173,6 +173,7 @@ body {
 .gallery-img--sports { background-color: #d4d4e8; background-image: url('images/sports.png'); }
 .gallery-img--music  { background-color: #e8d4e8; background-image: url('images/music.png'); }
 .gallery-img--walk   { background-color: #e8e8d4; background-image: url('images/walk.jpg'); }
+.gallery-img--anime  { background-color: #fde8d4; background-image: url('images/anime.jpg'); }
 .gallery-card p { padding: 12px; font-size: .9rem; font-weight: 500; color: var(--text); }
 
 /* ===== Contact ===== */
